@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4b0082;
+    padding: 10px 20px;
+    color: white;
+}
+.logo{
+    font-family: "Updock", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header .logo {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header nav ul li {
+    background-color: #6a0dad;
+    border-radius: 5px;
+}
+
+
+.hero {
+    background-image: url('/qwe/images/dog.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+.adoption-list {
+    text-align: center;
+    padding: 20px;
+}
+
+.adoption-list h2 {
+    margin-bottom: 20px;
+    color: #4b0082;
+}
+
+.dog-cards {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dog-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+}
+
+.dog-card img {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dog-card h3 {
+    margin: 10px 0;
+    color: #4b0082;
+}
+
+.stella{
+height: 100px ;
+}
