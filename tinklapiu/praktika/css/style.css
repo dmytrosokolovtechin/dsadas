@@ -1,0 +1,270 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .container-logo {
+    position: absolute;
+    top: 15px;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('/image/family.jpg') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container-hero {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+  }
+  
+  .text1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text2 {
+    font-size: 1rem;
+    max-width: 400px;
+  }
+  
+  .hero-buttons {
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+  
+  .primary {
+    background-color: #007bff;
+  }
+  
+  .secondary {
+    border: 2px solid #fff;
+    background-color: transparent;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+    gap: 2rem;
+    background-color: #272b41;
+  }
+  
+  .feature-card {
+    background: #313650;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    transition: transform 0.3s;
+  }
+  .container-card {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #c9c9c9;
+  }
+  
+  .icons {
+    margin-top: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .clients {
+    padding: 4rem 0;
+    background: #97c1f0;
+  }
+  
+  .clients h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+  
+  .client-testimonial {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 1rem;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .client-testimonial p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .client-testimonial h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .client-testimonial p:last-of-type {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .appointment {
+    padding: 4rem 0;
+    background: url('/image/family2.jpg') no-repeat center center/cover;
+  }
+  
+  .appointment h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .appointment form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .appointment form input,
+  .appointment form select,
+  .appointment form textarea,
+  .appointment form button {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .appointment form textarea {
+    grid-column: span 2;
+    resize: none;
+    height: 100px;
+  }
+  
+  .appointment form button {
+    grid-column: span 2;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  .appointment form button:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  .man, .woman{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 100px;
+
+  }
+  .man{
+    left: 30px;
+  }
+
+  .woman{
+    left: 46%;
+  }
+  @media only screen and (max-width: 768px) {
+    
+.clients{
+    text-align: center;
+    
+}
+
+.man{
+    left:  30%;
+}
+
+.woman{
+left:  30%;
+}
+
+}
